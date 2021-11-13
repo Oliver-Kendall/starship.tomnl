@@ -1,0 +1,18 @@
+# Use custom format
+format = """
+$character$time
+[│](bold purple)$directory$rust$git_branch$docker_context$java$python
+[╘══](bold purple)"""
+
+# Wait 10 milliseconds for starship to check files under the current directory.
+scan_timeout = 10
+
+# Disable the blank line at the start of the prompt
+add_newline = true
+
+[time]
+disabled = false
+style = "yellow"
+[character]
+success_symbol = "[](bold purple)"
+error_symbol = "[](red)"
